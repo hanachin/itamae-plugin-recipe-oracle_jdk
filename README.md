@@ -1,6 +1,6 @@
 # Itamae::Plugin::Recipe::OracleJdk
 
-TODO: Write a gem description
+Install Oracke JDK
 
 ## Installation
 
@@ -20,11 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    include_recipe 'oracle_jdk'
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/itamae-plugin-recipe-oracle_jdk/fork )
+1. Fork it ( https://github.com/hanachin/itamae-plugin-recipe-oracle_jdk/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
