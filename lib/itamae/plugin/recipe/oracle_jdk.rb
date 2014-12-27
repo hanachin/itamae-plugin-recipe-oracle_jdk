@@ -14,3 +14,16 @@ execute 'download oracke jdk' do
   cwd     work_dir
   not_if  "test -f #{work_dir}/#{filename}"
 end
+
+jdk_dir = '/opt/jdk'
+directory jdk_dir do
+  action :create
+end
+
+current_jdk_ver = "jdk1.8.0_25"
+
+execute 'extract oracle jdk' do
+  command "tar zxvf #{filename} -C #{jdk_dir}"
+  cwd     work_dir
+  not_if  "test -d #{jdk_dir}/#{current_jdk_ver}"
+end
