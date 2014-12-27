@@ -31,6 +31,6 @@ execute 'extract oracle jdk' do
 end
 
 execute 'install oracke jdk' do
-  command "update-alternatives --install /usr/bin/java java #{jdk_installed_dir}/bin/java 100"
+  command "update-alternatives --install /usr/bin/java java #{jdk_installed_dir}/bin/java 100 && update-alternatives --install /usr/bin/javac javac #{jdk_installed_dir}/bin/javac 100"
   not_if jdk_installedp
 end
